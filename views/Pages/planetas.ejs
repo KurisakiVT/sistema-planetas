@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Planetas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+            margin: 0;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+            opacity: 0.9;
+        }
+
+        .grid-planetas {
+            max-width: 800px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .planeta {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 14px;
+            padding: 15px;
+            text-align: center;
+            transition: 0.3s ease;
+        }
+
+        .planeta:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-5px);
+        }
+
+        .planeta img {
+            width: 100%;
+            max-width: 280px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .planeta span {
+            display: block;
+            margin-top: 12px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        /* Responsive: 1 columna en pantallas pequeñas */
+        @media (max-width: 600px) {
+            .grid-planetas {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sistema Solar</h1>
+    <p>Selecciona un planeta para ver su información</p>
+
+    <div class="grid-planetas">
+
+        <a href="/mercurio" class="planeta">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgfkcmLG5QgJavMlzmwJA9wgr5hYfpeppQiA&s" alt="Mercurio">
+            <span>Mercurio</span>
+        </a>
+
+        <a href="/venus" class="planeta">
+            <img src="https://astrosigma.com/images/sistema-solar/Venus-Mariner10-2020-600.jpg" alt="Venus">
+            <span>Venus</span>
+        </a>
+
+        <a href="/tierra" class="planeta">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/600px-The_Earth_seen_from_Apollo_17.jpg" alt="Tierra">
+            <span>Tierra</span>
+        </a>
+
+        <a href="/marte" class="planeta">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/600px-OSIRIS_Mars_true_color.jpg" alt="Marte">
+            <span>Marte</span>
+        </a>
+
+        <a href="/jupiter" class="planeta">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Jupiter_in_true_color.jpg/600px-Jupiter_in_true_color.jpg" alt="Júpiter">
+            <span>Júpiter</span>
+        </a>
+
+        <a href="/saturno" class="planeta">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Saturn_during_Equinox.jpg/600px-Saturn_during_Equinox.jpg" alt="Saturno">
+            <span>Saturno</span>
+        </a>
+
+        <a href="/urano" class="planeta">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Uranus2.jpg/600px-Uranus2.jpg" alt="Urano">
+            <span>Urano</span>
+        </a>
+
+        <a href="/neptuno" class="planeta">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Neptune_Voyager2_color_calibrated.png" alt="Neptuno">
+            <span>Neptuno</span>
+        </a>
+
+    </div>
+
+</body>
+</html>

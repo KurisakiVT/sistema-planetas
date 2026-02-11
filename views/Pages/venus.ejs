@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Venus</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #1c1c1c, #2c3e50);
+            color: #ffffff;
+            margin: 0;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contenido {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contenido p {
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .planeta-img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            margin-bottom: 30px;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.3);
+            margin: 30px 0;
+        }
+
+        .navegacion {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .navegacion a {
+            text-decoration: none;
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 10px 16px;
+            border-radius: 20px;
+            transition: 0.3s ease;
+            font-size: 14px;
+        }
+
+        .navegacion a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Venus</h1>
+
+    <div class="contenido">
+        <p>
+            Venus es el segundo planeta desde el Sol y el más caliente del sistema solar, 
+            con una temperatura superficial de unos 475°C provocada por un intenso efecto 
+            invernadero. Conocido como el planeta gemelo de la Tierra por su tamaño y 
+            estructura rocosa similar, Venus posee una densa atmósfera de dióxido de 
+            carbono y nubes de ácido sulfúrico. Gira lentamente en sentido contrario a la 
+            mayoría de los planetas y es el objeto más brillante en el cielo después de 
+            la Luna.
+        </p>
+
+        <img 
+            class="planeta-img"
+            src="https://astrosigma.com/images/sistema-solar/Venus-Mariner10-2020-600.jpg" 
+            alt="Imagen del planeta Venus"
+        >
+
+        <hr>
+
+        <div class="navegacion">
+            <a href="/planetas">Planetas</a>
+            <a href="/mercurio">Mercurio</a>
+            <a href="/tierra">Tierra</a>
+            <a href="/marte">Marte</a>
+            <a href="/jupiter">Júpiter</a>
+            <a href="/saturno">Saturno</a>
+            <a href="/urano">Urano</a>
+            <a href="/neptuno">Neptuno</a>
+        </div>
+    </div>
+
+</body>
+</html>
